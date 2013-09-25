@@ -100,6 +100,7 @@ public class ActiveDisplayView extends FrameLayout {
 
     private static final int MAX_OVERFLOW_ICONS = 8;
 
+
     private static final long DISPLAY_TIMEOUT = 8000L;
 
     private static final int HIDE_NOTIFICATIONS_BELOW_SCORE = Notification.PRIORITY_LOW;
@@ -108,6 +109,7 @@ public class ActiveDisplayView extends FrameLayout {
     private static final int POCKET_MODE_OFF = 0;
     private static final int POCKET_MODE_NOTIFICATIONS_ONLY = 1;
     private static final int POCKET_MODE_ALWAYS = 2;
+
 
     // Targets
     private static final int UNLOCK_TARGET = 0;
@@ -164,6 +166,8 @@ public class ActiveDisplayView extends FrameLayout {
     private int mUserBrightnessLevel = -1;
     private boolean mSunlightModeEnabled = false;
     private Set<String> mExcludedApps = new HashSet<String>();
+    private long mDisplayTimeout = 8000L;
+
 
     /**
      * Simple class that listens to changes in notifications
@@ -297,6 +301,8 @@ public class ActiveDisplayView extends FrameLayout {
                     Settings.System.ACTIVE_DISPLAY_EXCLUDED_APPS), false, this);
             resolver.registerContentObserver(Settings.System.getUriFor(
                     Settings.System.SCREEN_BRIGHTNESS_MODE), false, this);
+            resolver.registerContentObserver(Settings.System.getUriFor(
+                    Settings.System.ACTIVE_DISPLAY_TIMEOUT), false, this);
             update();
         }
 
@@ -335,8 +341,11 @@ public class ActiveDisplayView extends FrameLayout {
                     resolver, Settings.System.ACTIVE_DISPLAY_SUNLIGHT_MODE, 0) == 1;
             String excludedApps = Settings.System.getString(resolver,
                     Settings.System.ACTIVE_DISPLAY_EXCLUDED_APPS);
-
             createExcludedAppsSet(excludedApps);
+           
+		    mDisplayTimeout = Settings.System.getLong(
+                    resolver, Settings.System.ACTIVE_DISPLAY_TIMEOUT, 8000L);
+
 
             int brightnessMode = Settings.System.getInt(
                     resolver, Settings.System.SCREEN_BRIGHTNESS_MODE, -1);
@@ -1184,7 +1193,7 @@ public class ActiveDisplayView extends FrameLayout {
         } catch (Exception e) {
         }
         Calendar time = Calendar.getInstance();
-        time.setTimeInMillis(System.currentTimeMillis() + DISPLAY_TIMEOUT);
+        time.setTimeInMillis(System.currentTimeMillis() + mDisplayTimeout);
         am.set(AlarmManager.RTC, time.getTimeInMillis(), pi);
     }
 
