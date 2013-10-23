@@ -19,14 +19,14 @@
 <resources xmlns:xliff="urn:oasis:names:tc:xliff:document:1.2">
 
     <!-- QS Battery Tile -->
-    <string name="quick_settings_battery_charging">Charging</string>
-    <string name="quick_settings_battery_discharging">Discharging</string>
+    <string name="quick_settings_battery_charging">Cargando</string>
+    <string name="quick_settings_battery_discharging">Descargando</string>
 
     <!-- Kill app toast -->
-    <string name="app_killed_message">App Killed</string>
+    <string name="app_killed_message">App cerrada. Feliz?</string>
 
 
     <!--ScreenShot Trash-->
-    <string name="screenshot_notification_delete">Delete</string>
+    <string name="screenshot_notification_delete">Borrar</string>
 
 </resources>
