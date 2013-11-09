@@ -64,4 +64,8 @@
   <!-- Description of accessibility unlock target -->
   <java-symbol type="string" name="description_target_unlock" />
 
+  <!-- Config IME switcher -->
+  <java-symbol type="bool" name="config_show_IMESwitcher" />
+
+
 </resources>

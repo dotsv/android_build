@@ -2839,6 +2839,7 @@ public final class Settings {
         public static final String FORMAL_TEXT_INPUT = "formal_text_input";
 
         /**
+<<<<<<< HEAD
          * Display style of the status bar battery information
          * default: 0
          * @hide
@@ -3026,6 +3027,8 @@ public final class Settings {
         public static final String LOCKSCREEN_QUICK_UNLOCK_CONTROL = "lockscreen_quick_unlock_control";
 
         /**
+=======
+>>>>>>> d51b14e... fb: add back all keyboard IME features back (1/2)
          * Settings to backup. This is here so that it's in the same place as the settings
          * keys and easy to update.
          *
