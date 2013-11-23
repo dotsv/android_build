@@ -30,4 +30,10 @@
     <string name="accessibility_target_direction">Swipe to activate a target</string>
     <!-- Description of accessibility direction for targets [CHAR LIMIT=NONE] -->
    
+    <!-- status message in phone options dialog for when expanded desktop is on -->
+    <string name="global_actions_expanded_desktop_mode_on_status">Expanded desktop is ON</string>
+
+    <!-- status message in phone options dialog for when expanded desktop is off -->
+    <string name="global_actions_expanded_desktop_mode_off_status">Expanded desktop is OFF</string>
+
 </resources>
