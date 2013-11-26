@@ -26,8 +26,6 @@ PRODUCT_PACKAGES := \
     Calendar \
     Camera2 \
     CertInstaller \
-    Email \
-    Exchange2 \
     FusedLocation \
     Gallery2 \
     InputDevices \
@@ -39,7 +37,6 @@ PRODUCT_PACKAGES := \
     OneTimeInitializer \
     PrintSpooler \
     Provision \
-    QuickSearchBox \
     Settings \
     SystemUI \
     TeleService \

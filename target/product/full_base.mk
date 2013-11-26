@@ -21,8 +21,6 @@
 
 PRODUCT_PACKAGES := \
     libfwdlockengine \
-    OpenWnn \
-    PinyinIME \
     libWnnEngDic \
     libWnnJpnDic \
     libwnndict \
@@ -30,12 +28,10 @@ PRODUCT_PACKAGES := \
     WAPPushManager
 
 PRODUCT_PACKAGES += \
-    Galaxy4 \
     HoloSpiralWallpaper \
     LiveWallpapers \
     LiveWallpapersPicker \
     MagicSmokeWallpapers \
-    NoiseField \
     PhaseBeam \
     VisualizationWallpapers \
     PhotoTable
