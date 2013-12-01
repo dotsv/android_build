@@ -294,12 +294,8 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode {
     private Animator mLightsOutAnimation;
     private Animator mLightsOnAnimation;
 
-    private boolean mBrightnessControl = true;
-    private float mScreenWidth;
-    private int mMinBrightness;
-
     // status bar brightness control
-    private boolean mBrightnessControl;
+    private boolean mBrightnessControl = true;
     private float mScreenWidth;
     private int mMinBrightness;
     private int mPeekHeight;

@@ -2755,14 +2755,7 @@ public final class Settings {
         public static final String STATUS_BAR_CIRCLE_BATTERY_ANIMATIONSPEED =
                 "status_bar_circle_battery_animationspeed";
 
-        /**
-        * Whether to control brightness from status bar
-        *
-        * @hide
-        */
-       public static final String STATUS_BAR_BRIGHTNESS_CONTROL = "status_bar_brightness_control";
-
-        /**
+         /**
          * Battery warning preferences
          *
          * 0 = show dialog + play sound (default)
