@@ -744,10 +744,6 @@ public class GlowPadView extends View {
         }
     }
 
-    public int getTargetResourceId() {
-        return mTargetResourceId;
-    }
-
     public ArrayList<TargetDrawable> getTargetDrawables() {
         return mTargetDrawables;
     }
