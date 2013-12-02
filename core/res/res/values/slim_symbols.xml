@@ -17,8 +17,6 @@
 -->
 <resources>
 
-  <!-- Package Manager -->
-  <java-symbol type="array" name="config_disabledComponents" />
 
   <!-- Notification and Battery light -->
   <java-symbol type="array" name="notification_light_package_mapping" />
@@ -48,15 +46,6 @@
 
   <java-symbol type="string" name="reboot_progress" />
   <java-symbol type="string" name="reboot_system" />
-
-  <!-- Config IME switcher -->
-  <java-symbol type="bool" name="config_show_IMESwitcher" />
-
-  <!-- WiFi -->
-  <java-symbol type="bool" name="config_wifiApFirmwareReload" />
-
-  <!-- In WiFi AP notification -->
-  <java-symbol type="string" name="notify_turn_wifi_ap_off_title" />
 
   <!-- Power menu -->
   <java-symbol type="color"  name="power_menu_icon_default_color" />
