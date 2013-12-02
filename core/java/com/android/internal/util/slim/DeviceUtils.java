@@ -75,6 +75,15 @@ public class DeviceUtils {
         return false;
     }
 
+    public static boolean deviceSupportsGps(Context context) {
+        return context.getPackageManager().hasSystemFeature(PackageManager.FEATURE_LOCATION_GPS);
+    }
+
+    public static boolean deviceSupportsImeSwitcher(Context ctx) {
+        Resources res = ctx.getResources();
+        return res.getBoolean(com.android.internal.R.bool.config_show_IMESwitcher);
+    }
+
     public static boolean deviceSupportsTorch(Context context) {
         PackageManager pm = context.getPackageManager();
         Resources settingsResources = null;
