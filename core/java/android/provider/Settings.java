@@ -2758,6 +2758,14 @@ public final class Settings {
         /**
          * Icon color for advanced power menu
          *
+
+         * Show when WiFi or data mobile is sending/receiving data
+         * @hide
+         */
+        public static final String STATUS_BAR_NETWORK_ACTIVITY = "status_bar_network_activity";
+
+        /**
+         * Whether or not to show circle battery around the lockscreen ring
          * @hide
          */
         public static final String POWER_MENU_ICON_COLOR = "power_menu_icon_color";
