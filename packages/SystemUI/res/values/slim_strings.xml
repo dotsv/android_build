@@ -21,7 +21,8 @@
     <!-- QS Battery Tile -->
     <string name="quick_settings_battery_charging">Cargando</string>
     <string name="quick_settings_battery_discharging">Descargando</string>
-
+    <string name="quick_settings_battery_charged">Cargada</string>
+    
     <!-- Kill app toast -->
     <string name="app_killed_message">App cerrada. Feliz?</string>
 
