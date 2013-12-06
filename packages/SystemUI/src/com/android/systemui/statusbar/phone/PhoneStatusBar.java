@@ -1029,13 +1029,10 @@ public class PhoneStatusBar extends BaseStatusBar implements DemoMode {
         filter.addAction(ACTION_DEMO);
         filter.addAction(Intent.ACTION_EXTERNAL_APPLICATIONS_AVAILABLE);
         filter.addAction(Intent.ACTION_EXTERNAL_APPLICATIONS_UNAVAILABLE);
-<<<<<<< HEAD
         filter.addAction(Intent.ACTION_PACKAGE_REMOVED);
         filter.addAction(Intent.ACTION_PACKAGE_CHANGED);
         filter.addAction(Intent.ACTION_PACKAGE_ADDED);
         filter.addDataScheme("package");
-=======
->>>>>>> ed350ee... Fix: external storage problem NavRing and NavBar applications
         context.registerReceiver(mBroadcastReceiver, filter);
 
         // listen for USER_SETUP_COMPLETE setting (per-user)
