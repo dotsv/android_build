@@ -144,7 +144,11 @@ $(foreach p,$(really_all_products), \
    )
 
 $(products_pdf): $(products_graph)
+<<<<<<< HEAD
 	@echo -e ${PRT_TGT}"Product graph PDF:"${CL_RST}" $@"
+=======
+	@echo Product graph PDF: $@
+>>>>>>> dcc4797cdb06bff53a2b615e7bd08310b248aca2
 	dot -Tpdf -Nshape=box -o $@ $<
 
 $(products_svg): $(products_graph) $(product_debug_files)
